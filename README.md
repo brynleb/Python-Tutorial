@@ -3,12 +3,10 @@
 Python is a high-level, interpreted programming language that has now become the language of choice in
 many fields of science. This is largely due to its ease of programming and readability, the large number
 of libraries and community support, and the variety of programming environments (e.g. command line
-interpreters, scripts, web-based interpreters, notebooks). This tutorial is a crash course in Python designed
-to give you an overview of the programming essentials, as well as some useful tools for scientific computing,
-data processing, and visualization.
-
-This tutorial is largely based on Corey Schafer's excellent YouTube series, which be found here:
-- https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
+interpreters, scripts, web-based interpreters, notebooks). This tutorial, which is largely based on Corey
+Schafer’s excellent [YouTube series](https://www.youtube.com/@coreyms/featured), is a crash course in Python designed to give you an overview of
+the programming essentials, as well as some useful tools for scientific computing, data processing, and
+visualization.
 
 The majority of the modules in this tutorial are written in Jupyter Notebooks (formally IPython
 Notebooks). This is a web-based interactive development environment (IDE) for writing code (e.g.,
@@ -25,7 +23,9 @@ notebooks), allowing you to choose the most convenient option. It also has built
 and streamlines the installation of third-party extensions for additional features like code linting.
 
 ## Additional Resources
-
+- Corey Schafer's Python tutorial and related playlists:
+  - [Python Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+  - [Matplotlib Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB)
 - To get your barrings with VS Code, check out their Getting Started videos:
   - https://code.visualstudio.com/docs/getstarted/introvideos
 - To get started with Python in VS Code:
