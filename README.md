@@ -23,9 +23,9 @@ notebooks), allowing you to choose the most convenient option. It also has built
 and streamlines the installation of third-party extensions for additional features like code linting.
 
 ## Additional Resources
-- [Corey Schafer's Python Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
-- [Corey Schafer's Matplotlib Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB)
-- [Getting Started with VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [Corey Schafer's Python tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+- [Corey Schafer's Matplotlib tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB)
+- [Getting started with VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
 - [Getting started with Python](https://code.visualstudio.com/docs/python/python-tutorial)
-- [User interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface)
-- [Customizing you VS Code environment](https://www.youtube.com/watch?v=-nh9rCzPJ20)
+- [Documentation for VS Code user interface](https://code.visualstudio.com/docs/getstarted/userinterface)
+- [Customizing your VS Code environment](https://www.youtube.com/watch?v=-nh9rCzPJ20)
