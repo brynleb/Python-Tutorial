@@ -23,14 +23,11 @@ notebooks), allowing you to choose the most convenient option. It also has built
 and streamlines the installation of third-party extensions for additional features like code linting.
 
 ## Additional Resources
-- Corey Schafer's Python tutorial and related playlists:
+- Corey Schafer's YouTube playlists:
   - [Python Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
   - [Matplotlib Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB)
-- To get your barrings with VS Code, check out their Getting Started videos:
-  - https://code.visualstudio.com/docs/getstarted/introvideos
-- To get started with Python in VS Code:
-  - https://code.visualstudio.com/docs/python/python-tutorial
-- Additional documentation on the VS Code interface can be found here:
-  - https://code.visualstudio.com/docs/getstarted/userinterface
-- To further customize your VS code environment, check out Corey Schafer’s video:
-  - https://www.youtube.com/watch?v=-nh9rCzPJ20
+- To get your barrings with VS Code:
+  - [Getting Started with VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
+  - [Getting started with Python](https://code.visualstudio.com/docs/python/python-tutorial)
+  - [User interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface)
+  - [Customizing you VS code environment](https://www.youtube.com/watch?v=-nh9rCzPJ20)
