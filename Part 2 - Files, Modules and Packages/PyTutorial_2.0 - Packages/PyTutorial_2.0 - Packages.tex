@@ -1,0 +1,165 @@
+\documentclass{UNB-Physics-Assignment}
+
+\usepackage{bm}
+\usepackage{comment}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{mathtools}
+\usepackage{fancyvrb}
+
+\newcommand*{\Course}{PHYS 4332 -- Computational Physics -- W2025}
+\newcommand*{\Assignment}{Python Tutorial}
+\newcommand*{\DueDate}{2.0 -- Installing packages using pip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+%================================================================
+
+\noindent
+The base installation of Python includes the \href{https://docs.python.org/3.12/library/index.html}{Python standard library}. This is an extensive library of build-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers (e.g., the \verb"os()" module), as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming (e.g., the \verb"datetime()" module).
+
+In addition to the standard library, the \href{https://pypi.org/}{Python Package Index (PyPI)} is an active collection of more than 100,000 third-party modules, packages, and entire application development frameworks. This is a repository of Python software developed, maintained, and shared by the Python community. The Package Installer for Python (\verb"pip", part of the standard library) provides a simple way of installing third-party packages from PyPI and other repositories.
+
+\begin{itemize}
+\item To get the version of pip you currently have installed, from a terminal/command prompt type:
+\begin{verbatim}
+  >>> pip --version
+
+  pip 24.3.1 from C:\Python 3.12\Lib\site-packages\pip (python 3.12)
+\end{verbatim}
+
+\item To upgrade pip to the latest version, type:
+\begin{verbatim}
+  >>> python -m pip install --upgrade pip
+
+  Requirement already satisfied: pip in c:\python 3.12\lib\site-packages (24.3.1)
+\end{verbatim}
+
+\item To get a list of all available commands and options for pip, use \verb"help":
+\begin{verbatim}
+  >>> pip help
+
+  Usage:
+    pip <command> [options]
+
+  Commands:
+    install                     Install packages.
+    download                    Download packages.
+    uninstall                   Uninstall packages.
+    freeze                      Output installed packages in requirements format.
+    list                        List installed packages.
+    show                        Show information about installed packages.
+    check                       Verify installed packages have compatible dependencies.
+    config                      Manage local and global configuration.
+    search                      Search PyPI for packages.
+    cache                       Inspect and manage pip's wheel cache.
+    index                       Inspect information available from package indexes.
+    wheel                       Build wheels from your requirements.
+    hash                        Compute hashes of package archives.
+    completion                  A helper command used for command completion.
+    debug                       Show information useful for debugging.
+    help                        Show help for commands.
+
+  General Options:
+    -h, --help                  Show help.
+  ...
+\end{verbatim}
+
+\item You can also get detailed help for specific commands (e.g. \verb"install"):
+\begin{verbatim}
+  >>> pip help install
+
+  Usage:
+    pip install [options] <requirement specifier> [package-index-options] ...
+    pip install [options] -r <requirements file> [package-index-options] ...
+    pip install [options] [-e] <vcs project url> ...
+    pip install [options] [-e] <local project path> ...
+    pip install [options] <archive url/path> ...
+
+  Description:
+    Install packages from:
+
+    - PyPI (and other indexes) using requirement specifiers.
+    - VCS project urls.
+    - Local project directories.
+    - Local or remote source archives.
+
+    pip also supports installing from "requirements files", which provide
+    an easy way to specify a whole environment to be installed.
+  ...
+\end{verbatim}
+
+\item To list the packages currently installed, use \verb"list":
+\begin{verbatim}
+  >>> pip list
+\end{verbatim}
+
+\item To install a new package, use \verb"install". By default, this will install the latest version of the package. For example, to install the \verb"numpy" package:
+\begin{verbatim}
+  >>> pip install numpy
+
+  Collecting numpy
+    Downloading numpy-2.1.3-cp312-cp312-win_amd64.whl.metadata (59 kB)
+  Downloading numpy-2.1.3-cp312-cp312-win_amd64.whl (12.6 MB)
+  ---------------------------------------- 12.6/12.6 MB 14.9 MB/s eta 0:00:00
+  Installing collected packages: numpy
+  Successfully installed numpy-2.1.3
+\end{verbatim}
+
+Here, \verb"pip" found and installed \verb"numpy" version 2.1.3.
+
+\item To install a specific version of a package, use \verb"install=="version number. This will automatically uninstall other versions of the same package on your system. For example, to install version 2.1.0 of the \verb"numpy" package:
+\begin{verbatim}
+  >>> pip install numpy==2.1.0
+
+  Collecting numpy==2.1.0
+    Downloading numpy-2.1.0-cp312-cp312-win_amd64.whl.metadata (59 kB)
+  Downloading numpy-2.1.0-cp312-cp312-win_amd64.whl (12.6 MB)
+  ---------------------------------------- 12.6/12.6 MB 19.2 MB/s eta 0:00:00
+  Installing collected packages: numpy
+    Attempting uninstall: numpy
+      Found existing installation: numpy 2.1.3
+      Uninstalling numpy-2.1.3:
+        Successfully uninstalled numpy-2.1.3
+  Successfully installed numpy-2.1.0
+\end{verbatim}
+
+\item Now let's see if any packages are outdated by using the \verb"--outdated" option of the \verb"list" command:
+\begin{verbatim}
+  >>> pip list --outdated
+
+  Package Version Latest Type
+  ------- ------- ------ -----
+  numpy   2.1.0   2.1.3  wheel
+\end{verbatim}
+
+\item To upgrade a package to the latest version, use the \verb"-U" option:
+\begin{verbatim}
+  >>> pip install -U numpy
+\end{verbatim}
+
+\item To uninstall a package, use \verb"uninstall"  and type \verb"y" to confirm:
+\begin{verbatim}
+  >>> pip uninstall numpy
+\end{verbatim}
+
+\item To get a list of installed packages in a requirements format, use \verb"freeze":
+\begin{verbatim}
+  >>> pip freeze
+\end{verbatim}
+
+\item To export this list to a file called \verb"Requirements.txt":
+\begin{verbatim}
+  >>> pip freeze > Requirements.txt
+\end{verbatim}
+
+\item To automatically install all the packages listed in \verb"Requirements.txt" (with their corresponding versions):
+\begin{verbatim}
+  >>> pip install -r Requirements.txt
+\end{verbatim}
+
+\end{itemize}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
